@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    <section id="living-room">
+
+        <div id="tv">
+            <div id="screen">
+                <iframe width="100%" height="100%" 
+                id="screen-content"
+                src="https://www.youtube.com/embed/660p-hPUzu0"
+                frameborder="0"
+                allow="autoplay; encrypted-media;" 
+                ></iframe>
+                <p class="channel"></p>
+            </div>
+            <div id="indicator"></div>
+        </div>
+        <div id="remote">
+            <button onclick="tv.power_tv()" id="power-button"><img src="./icons/power.svg"></button>
+            <div class="channel-buttons">
+                <button onclick="tv.change_channel(-1)">
+                    <img src="./icons/prev.svg">
+                </button>
+                <button onclick="tv.change_channel(1)" id="next">
+                    <img src="./icons/next.svg">
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+
+</body>
+</html>
+
