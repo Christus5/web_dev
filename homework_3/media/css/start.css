@@ -1,0 +1,66 @@
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+        color: white;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes shift-color {
+    0% {
+        background-color: transparent;
+        box-shadow: 0 0 1px -1px initial;
+    }
+    50% {
+        box-shadow: 0 0 500px 10vw initial;
+    }
+    100% {
+        box-shadow: 0 0 1000px 10vw initial;
+    }
+}
+
+#start-menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg, var(--black), var(--graphite), var(--black));
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    color: white;
+}
+
+#start-menu h1 {
+    margin: 5vh auto;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+
+#light-2 {
+    top: 50%;
+    left: 50%;
+}
+
+#light-2 .cable {
+    display: none;
+}
+
+#light-2 .bulb {
+    animation: shift-color 15s ease infinite;
+    cursor: pointer;
+}
+
+
+#game {
+    display: none;
+}

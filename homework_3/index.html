@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./media/css/style.css">
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <title>Traffic Lights</title>
+</head>
+<body>
+    <section id="start-menu">
+        <h1> Lights out</h1>
+
+        <div class="bulb-container" id="light-2">
+            <div class="cable"></div>
+            <div class="bulb-socket"></div>
+            <button class="bulb" onclick="start_game()"></button>
+        </div>
+        <div id="menu">
+            <p>Find white dot and keep the light alive</p>
+            <button class="btn" id="change-color" onclick="change_color()">Change color</button>
+        </div>
+        
+    </section>
+    <section id="game">
+        <div class="bulb-container" id="light-1">
+            <div class="cable"></div>
+            <div class="bulb-socket"></div>
+            <div class="bulb" id='main-bulb'></div>
+        </div>
+        <div class="switch" id="switch-light">
+            <button onclick="toggle_bulb()">.</button>
+        </div>
+    </section>
+
+    <section id="end-screen">
+        <p>Your score <span id="score"></span></p>
+        <!-- <button class="btn" id='restart-btn' onclick="start_game()">Restart</button> -->
+    </section>
+   
+    <script src="scripts/main.js"></script>
+</body>
+</html>
